@@ -19,27 +19,7 @@ function restrictTo(roles=[]){
 
     }
 }
-// async function isRestrictedtoLogin(req,res,next){
-//     // const userSession=req.cookies?.uid
-//     const userSession=req.headers["authorization"]
-//     if(!userSession) return res.render("login")
-//         const token=userSession.split('Bearer ')[1]
 
-//         const user=getUser(token);
-//     if(!user) return res.render("login")
-//         req.user=user
-// next()
-// }
-// async function checkauth(req,res,next) {
-//     // const userSession=req.cookies?.uid
-//     const userSession=req.headers["authorization"]
-//     const token=userSession.split('Bearer ')[1]
-
-//     const user=getUser(token);
-//     req.user=user 
-//     next()
-    
-// }
 module.exports={
     checkForAuthentication,restrictTo
 }
